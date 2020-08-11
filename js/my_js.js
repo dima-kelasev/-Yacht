@@ -16,6 +16,12 @@ document.addEventListener("DOMContentLoaded", () => {
 	});
 
 
+	$('.link_back_ENG').click(function() {
+		console.log('link_back_ENG')
+   		$('html').animate({ scrollTop: 0 }, 'slow');
+	});
+
+
 
 				$('.send_button').click(function(){
 					const form = $(this).closest('.form-email');
@@ -23,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			const phone = $(form).find('.user_phone');
 			const textarea = $(form).find('.textarea');
 			
-						if (!name.val() || !phone.val() || !textarea.val()) {
+			if (!name.val() || !phone.val() || !textarea.val()) {
 				name.addClass('error');
 				textarea.addClass('error');
 				phone.addClass('error');
@@ -35,9 +41,9 @@ document.addEventListener("DOMContentLoaded", () => {
 				phone.removeClass('error');
 
 				var templateParams = {
-					name: name.val(),
-					phone: phone.val(),
-					textarea: textarea.val()
+					"to_name": name.val(),
+   					"numder": phone.val(),
+  					 "Message_html": textarea.val()
 				};
 				console.log(templateParams)
 
@@ -45,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 var service_id = "default_service";
 var template_id = "template_AgaRRaZ3";
-emailjs.send(service_id, template_id, templateParams)
+emailjs.send(service_id, "template_AgaRRaZ3",templateParams )
 					.then(function(response) {
 						console.log('SUCCESS!', response.status, response.text);
 					}, function(error) {
