@@ -10,15 +10,26 @@ document.addEventListener("DOMContentLoaded", () => {
 		$(`.${action}`).show();
 	})
 
+
 	$('.link_back').click(function() {
-		console.log('link_back')
    		$('html').animate({ scrollTop: 0 }, 'slow');
 	});
 
 
 	$('.link_back_ENG').click(function() {
-		console.log('link_back_ENG')
    		$('html').animate({ scrollTop: 0 }, 'slow');
+	});
+
+
+
+	$('.btn_up').click(function(){
+		$('html').animate({scrollTop: 0 }, 'slow');
+	});
+
+	const showDc = $('.show_description');
+	$('.action_button').click(function(){
+		$(showDc).toggle();
+		$('.action_button').hide();
 	});
 
 
