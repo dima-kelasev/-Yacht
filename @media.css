@@ -252,7 +252,7 @@ and (max-device-width: 1024px) {
 		border-radius: 250px;
 	}
 	.maps iframe {
-	    border-radius: 250px;
+	    border-radius: 250px !important;
 	}
 	.logo_footer {
 	    width: 91%;
