@@ -1,10 +1,20 @@
 body {
 	margin: 0;
 	padding: 0;
+
+}
+h1, h2, {
+	margin: 0;
 }
 
-
-
+@font-face {
+  font-family: "NECMATO";
+  font-style: normal;
+  font-weight: 400;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("NECMATO"),
+  url("../fonts/NECMATO.woff") format("woff");
+}
 .hide_container {
 	display: none;
 }
@@ -69,9 +79,17 @@ body {
 	font-weight: bold;
 	transition: .2s;
 }
+.main_name h1 {
+	font-family: "NECMATO";
+	font-size: 200px;
+    font-weight: 100;
+    margin: 0;
+    height: 168px;
+    width: 100%;
+}
 .main_name {
     position: relative;
-    top: 15%;
+    top: -5%;
     left: 15%;
     width: 87%;
 }
@@ -84,6 +102,7 @@ body {
 	font-weight: normal;
 	line-height: 22px;
 	font-size: 18px;
+	margin: 0;
 }
 .btn_back {
 	width: 24%;
@@ -108,7 +127,6 @@ body {
 	justify-content: space-between;
 	position: relative;
 	right: 10%;
-    top: 23%;
     background: url(../img/white_bg.png) center no-repeat;
     overflow: hidden;
     
@@ -117,6 +135,14 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	padding-left: 8%;
 	z-index: 2;
+}
+.info_text h2 {
+	font-family: "NECMATO";
+	font-size: 80px;
+    margin: 0;
+    font-weight: 100;
+    height: 80px;
+    border-bottom: 2px solid #000;
 }
 .sale {
 	color: #FF7A00;
@@ -236,8 +262,18 @@ body {
 .name_group {
 	display: grid;
 	justify-content: center;
-	margin-top: 30px;
+	/*margin-top: 30px;*/
 	width: 100%;
+}
+.name_group h2 {
+	text-align: center;
+	font-family: "NECMATO";
+	font-weight: 100;
+	margin: 0;
+    font-size: 80px;
+    height: 80px;
+    border-bottom: 1px solid #000;
+    width: 100%;
 }
 .main_name_group {
 	width: 100%;

@@ -12,6 +12,9 @@ and (max-device-width: 1024px) {
 		margin: 0;
 		padding: 0;
 	}
+	h1, h2, {
+		margin: 0;
+	}
 	.hide_container {
 		display: block;
 	}
@@ -26,6 +29,13 @@ and (max-device-width: 1024px) {
 	}
 	.second_block_with_contact {
 		display: none;
+	}
+	.main_logo h1 {
+		font-family: "NECMATO";
+		font-weight: 100;
+		margin: 0;
+		font-size: 400px;
+   		height: 326px;
 	}
 	.numbers {
 		height: 100px;
@@ -129,6 +139,15 @@ and (max-device-width: 1024px) {
 
 	.name_group {
 		display: flex;
+		margin: 0;
+	}
+	.name_group h2 {
+		font-family: "NECMATO";
+	    font-weight: 100;
+	    margin: -10px 0 56px 0;
+	    font-size: 200px;
+	    height: 80px;
+	    /*border-bottom: 1px solid #000;*/
 	}
 	.info_about_yacht {
 		display: grid;
