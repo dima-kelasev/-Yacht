@@ -122,7 +122,9 @@ and (max-device-width: 1024px) {
 	}
 	.main_name_group {
 		width: 50%;
+		height: 84px;
 	}
+
 	.name_group {
 		display: flex;
 	}
@@ -235,6 +237,9 @@ and (max-device-width: 1024px) {
 	    height: 1500px;
     	border-radius: 250px;
    		margin: 4%;
+	}
+	.logo_footer_img img {
+		height: 380px;
 	}
 	.footer_contact p {
 	    font-size: 80px;

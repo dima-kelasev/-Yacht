@@ -8,6 +8,9 @@ body {
 .hide_container {
 	display: none;
 }
+.show_description {
+	display: flex;
+}
 /*HEADER*/
 
 
