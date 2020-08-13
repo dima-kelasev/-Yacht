@@ -249,6 +249,7 @@ and (max-device-width: 1024px) {
 		width: 85%;
 		padding: 0 81px;
 		margin-top: 10%;
+		border-radius: 250px;
 	}
 	.maps iframe {
 	    border-radius: 250px;
@@ -269,11 +270,21 @@ and (max-device-width: 1024px) {
 	    font-family: 'Montserrat', sans-serif;
 	    font-weight: bold;
 	}
+	.footer_title1 {
+		text-decoration: none !important; 
+	    color: #fff;
+	}
+	.footer_title1 p {
+		text-decoration: none !important; 
+	    color: #fff;
+	}
 	.footer_title1 img {
 	    height: 75px;
 	    position: relative;
 	    top: 88px;
 	    right: 28px;
+	    text-decoration: none !important; 
+	    color: #fff;
 	}
 	.footer_title img {
 		 height: 75px;
@@ -291,9 +302,7 @@ and (max-device-width: 1024px) {
 	    color: #fff;
 	    font-size: 60px;
 	}
-	.social {
-		margin-top: 6%;
-	}
+	
 	.footer_menu {
 		text-align: center;
 	}
