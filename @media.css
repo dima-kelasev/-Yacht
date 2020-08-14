@@ -254,6 +254,13 @@ and (max-device-width: 1024px) {
 	.maps iframe {
 	    border-radius: 250px !important;
 	}
+	.footer_title1 a {
+		text-decoration: none;
+    	color: #fff;
+    	font-size: 80px;
+    	font-family: 'Montserrat', sans-serif;
+	    font-weight: bold;
+	}
 	.logo_footer {
 	    width: 91%;
 	    background: #012A33;
@@ -281,7 +288,7 @@ and (max-device-width: 1024px) {
 	.footer_title1 img {
 	    height: 75px;
 	    position: relative;
-	    top: 88px;
+	    top: 15px;
 	    right: 28px;
 	    text-decoration: none !important; 
 	    color: #fff;
