@@ -108,7 +108,7 @@ h1, h2, {
 .btn_back {
 	width: 24%;
 	height: 52px;
-	background: #000;
+	background: #012A33;
 	border-radius: 35px;
 	border-color: #000;
 	margin-top: 3%;
@@ -161,7 +161,7 @@ h1, h2, {
 	margin-right: 10px;
 }
 .btn_yhts {
-	background: #000;
+	background: #012A33;
     border-radius: 35px;
     width: 50%;
     height: 40px;
@@ -362,7 +362,7 @@ h1, h2, {
 .btn_call {
 	width: 150px;
     height: 37px;
-    background: #000;
+    background: #012A33;
     border-radius: 30px;
     text-align: center;
     padding: 17px 0 0 0;
@@ -475,7 +475,7 @@ h1, h2, {
 .btn_form_back button {
 	width: 157px;
 	height: 46px;
-	background: #000;
+	background: #012A33;
 	color: #fff;
 	font-family: 'Montserrat', sans-serif;
 	font-weight:  bold;
