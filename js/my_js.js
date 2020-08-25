@@ -32,6 +32,16 @@ document.addEventListener("DOMContentLoaded", () => {
 		$('.action_button').hide();
 	});
 
+	$('#form_back').submit(function(e) {
+	 e.preventDefault();
+	 $('#form_back')[0].reset();
+	})
+
+	$('#form_back1').submit(function(e) {
+	 e.preventDefault();
+	 $('#form_back1')[0].reset();
+	})
+
 
 
 				$('.send_button').click(function(){
