@@ -1,630 +1,1231 @@
 body {
-	margin: 0;
-	padding: 0;
-
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
 }
-h1, h2, {
-	margin: 0;
-}
-
 @font-face {
-  font-family: "NECMATO";
-  font-style: normal;
-  font-weight: 400;
-  /* Браузер сначала попробует найти шрифт локально */
-  src: local("NECMATO"),
-  url("../fonts/NECMATO.woff") format("woff");
-}
-.hide_container {
-	display: none;
-}
-.show_description {
-	display: flex;
-}
-/*HEADER*/
+    font-family: "Adriana-Bold";
+    font-style: normal;
+    font-weight: bold;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("NECMATO"),
+    url("../font/Adrina-Bold.otf") format("otf");
+  }
 
+  @font-face {
+    font-family: "Adriana-Bold";
+    font-style: normal;
+    font-weight: normal;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("NECMATO"),
+    url("../font/Adrina-Regular.otf") format("otf");
+  }
 
-.header_container {
-	display: flex;
-	justify-content: space-between;
-}
-.logo_image {
-	width: 40%;
-	height: 656px;
-	position: relative;
-}
-.logo_img {
-	position: absolute;
-	right: 17%;
-	top: 10px;
-}
-.right_block_header {
-	width: 100%;
-	padding: 1% 1% 0 0;
-
-}
-.numbers {
-	text-align: end;
-	width: 100%;
-}
-.numbers a {
-	text-decoration: none;
-	font-family: 'Montserrat', sans-serif;
-	color: #000;
-}
-.check_langue {
-	text-align: end;
-	width: 100%;
-}
-.check_langue li {
-	list-style-type: none;
-	margin-bottom: 15px;
-}
-.bold {
-
-}
-.btn_langue1 {
-	text-decoration: none;
-	color: #012A33;
-	font-family: Montserrat;
-	font-weight: bold;
-}
-.btn_langue {
-	text-decoration: none;
-	color: #012A33;
-	font-family: Montserrat;
-	font-weight: normal;
-}
-.check_langue a:hover {
-	font-weight: bold;
-	transition: .2s;
-}
-.main_name h1 {
-	font-family: "NECMATO";
-	font-size: 200px;
-    font-weight: 100;
-    margin: 0;
-    height: 168px;
+.header {
+    background: url(../img/BGImage.png) center no-repeat;
+    background-size: cover;
+    text-align: center;
     width: 100%;
-    margin-top: 40px; 
 }
-.main_name {
+.heaeder_logo {
+    padding: 1% 0 3% 0;
+    width: 100%;
+}
+.heaeder_logo img {
+    width: 14%;
+}
+.header_nav {
+    width: 100%;
+}
+.header_title {
+    margin-bottom: 21%;
+}
+.header_title h1 {
+    font-size: 140px;
+    font-weight: bold;
+    color: #fff;
+    font-family: "Adriana-Bold";
+}
+.header_menu {
+    width: 56%;
+}
+.header_menu li {
+    display: inline;
+    margin: 0 2%;
+}
+.header_menu a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 200;
+    transition: .5s;
+}
+.header_menu a:hover {
+    color: #D9BD75;
+    transition: .5s;
+}
+.header_nav {
+    display: flex;
+    justify-content: center;
+}
+.nav_lang {
     position: relative;
-    top: -5%;
-    left: 15%;
-    width: 87%;
-}
-.main_name img {
-	width: 60%;
-	height: 75px;
-}
-.title_name {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: normal;
-	line-height: 22px;
-	font-size: 18px;
-	margin: 0;
-}
-.btn_back {
-	width: 24%;
-	height: 52px;
-	background: #012A33;
-	border-radius: 35px;
-	border-color: #000;
-	margin-top: 3%;
-}
-.btn_back a {
-	text-decoration: none;
-	font-family: 'Montserrat', sans-serif;
-	color: #fff;
-	font-size: 16px;
-}
-.main_block_with_yaht {
-	box-shadow:-6px 0px 21px 3px rgba(0,0,0,0.38);
-	-webkit-box-shadow:-6px 0px 21px 3px rgba(0,0,0,0.38);
-	-moz-box-shadow:-6px 0px 21px 3px rgba(0,0,0,0.38);
-	border-radius: 60px;
-	display: flex;
-	justify-content: space-between;
-	position: relative;
-	right: 10%;
-    background: url(../img/white_bg.png) center no-repeat;
-    overflow: hidden;
-    
-}
-.info_text {
-	font-family: 'Montserrat', sans-serif;
-	padding-left: 8%;
-	z-index: 2;
-}
-.info_text h2 {
-	font-family: "NECMATO";
-	font-size: 80px;
-    margin: 0;
-    font-weight: 100;
-    height: 80px;
-    border-bottom: 2px solid #000;
-}
-.sale {
-	color: #FF7A00;
-}
-.foto_yaht img {
-	height: 400px;
-}
-.block_description {
-	display: flex;
-}
-.block_description img {
-	height: 20px;
-	position: relative;
-	top: 14px;
-	margin-right: 10px;
-}
-.btn_yhts {
-	background: #012A33;
-    border-radius: 35px;
-    width: 50%;
-    height: 40px;
-    border-color: #000;
-    margin-top: 15px;
+    top: -7px;
+    border: 1px solid #fff;
+    padding: 1% 1.5% 1% 1%;
+    border-radius: 10px;
+    width: 2%;
+    height: 10%;
     cursor: pointer;
 }
-.btn_yhts a {
-	text-decoration: none;
-	color: #fff;
-
+.nav_lang p {
+    font-size: 20px;
+    color: #fff;
+    margin: 0;
 }
-.info_yaht a {
-	color: #0D9DA6;
-	text-decoration: none;
-	border-bottom: 2px dashed;
+.header_btn_contact button {
+    height: 80px;
+    width: 300px;
+    background: 0;
+    border: 1px solid #fff;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 200;
+    border-radius: 5px;
+    transition: .5s;
 }
-
-/*Catergory*/
-
-.category {
-	width: 100%;
-	/*height: 200px;*/
-	margin-top: 220px;
+.header_btn_contact button:hover {
+    background: #133465;
+    border: #133465;
+    transition: .5s;
 }
-.our_yaht {
-	text-align: center;
-	line-height: 20px;
+.header_btn_contact {
+    padding: 2% 0;
 }
-.our_yaht h2 {
-	font-family: 'Montserrat', sans-serif; 
-	font-weight: bold;
-	font-size: 44px;
-}
-.our_yaht p {
-	font-family: 'Montserrat', sans-serif; 
-	font-weight: normal;
-	font-size: 24px;
-}
-.class_yaht {
-	display: flex;
-	justify-content: center;
-}
-.link_class {
-	text-align: center;
-	padding-top: 3px;
-	width: 140px;
-	height: 40px;
-	border: 1px solid #000;
-	border-radius: 30px;
-	background: #fff;
-	text-decoration: none;
-	color: #000;
-	font-family: 'Montserrat', sans-serif;
-	margin: 0 20px;
-	outline: none;
-}
-.active {
-	background: #FF7A00;
-	color: #fff;
-	border: 0px;
-}
-.link_class:hover {
-	background: #FF7A00;
-	color: #fff;
-	border: 1px solid #FF7A00;
-	transition: .3s;
+.header_btn_contact button {
+    cursor: pointer;
 }
 
-/*block_yacht*/
+/* 2 section */
 
-.content{
+.slide_section {
+    padding: 0 0 7% 0;
+}
+.title_text {
+    text-align: center;
+    color: #000;
+    margin: 5% 0;
+}
+.title_text h1 {
+    font-size: 60px;
+    font-weight: bold;
+    font-family: "Adriana-Bold";
+    letter-spacing: 25px;
+    text-transform: uppercase;
+}
+.title_text p {
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 300;
+}
+.slick-track {
+    display: flex;
+}
+.slider {
+    position: relative;
+    overflow: hidden;
+    padding: 2% 0;
+}
+.slider .slick-arrow {
+    position: absolute;
+    top: 1%;
+    right: 3%;
+    font-size: 0;
+    cursor: pointer;
+}
+.slider .slick-arrow.slick-prev {
+    right: 7%;
+    background: url(../img/slider/Arrow\ 3.png) center no-repeat;
+    background-size: contain;
+    width: 3%;
+    height: 4%;
+    border: 0;
+}
+.slider .slick-arrow.slick-next {
+    background: url(../img/slider/Arrow\ 2.png) center no-repeat;
+    background-size: contain;
+    width: 3%;
+    height: 4%;
+    border: 0;
+}
+.slider .slick-arrow.slick-prev:focus {
+    outline: none;
+ }
+ .slider .slick-arrow.slick-next:focus {
+    outline: none;
+ }
+ .slider_wrap {
+    padding: 0 .2%;
+ }
+ .slider_block {
+     width: 100%;
+ }
+ .slider_block img {
+     transition: 1s;
+ }
+ .slider_block img:hover {
+     transform: scale(1.2);
+ }
+ .link_top_yacht {
+     cursor: pointer;
+     color: #133465;
+     text-decoration: none;
+     font-weight: normal;
+ }
+ .slide_title {
+     font-size: 18px;
+     font-weight: lighter;
+     text-align: end;
+     margin-right: 17%;
+ }
+
+ /* 3 section */
+.category_yacht {
+    padding: 0 0 5% 0;
+}
+ .category_btn {
+     text-align: center;
+     margin: 5% 0;
+ }
+ .btn_class {
+     width: 15.66%;
+     font-size: 18px;
+     background: none;
+     padding: 1.46% 0;
+     font-weight: 300;
+     font-family: 'Roboto Slab', serif;
+     margin: 0 1%;
+     border-radius: 5px;
+     cursor: pointer;
+ }
+ .yacht_wrap {
+     display: flex;
+     width: 100%;
+     justify-content: space-around;
+     margin: 0 0 5% 0;
+ }
+ .yacht_header {
+     display: flex;
+     padding: 0 5%;
+ }
+ .yacht_img {
+     width: 59.3%;
+ }
+ .yacht_img img {
+     width: 100%;
+ }
+ .yacht_block {
+     width: 43.5%;
+     background: #F5F5F5;
+ }
+ .yacth_desc {
+     margin-left: 7%;
+ }
+ .yacth_desc p {
+     font-weight: 100;
+ }
+ .color_desc {
+     color: #133465;
+ }
+ .btn_see {
+     text-align: center;
+     padding: 4% 0;
+ }
+ .btn_see button {
+    font-size: 18px;
+    width: 36%;
+    padding: 3.36% 0;
+    background: #133465;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+ }
+ .yacht_img img {
+     position: relative;
+     top: -13%;
+ }
+ .content{
 	width: 100%;
 	display: none;
 }
 .content.show {
 	display: block;
 }
-.sale_block_yacht {
-	display: flex;
-	justify-content: space-around;
-	margin-top: 90px;
+.active {
+	background: #133465;
+	color: #fff;
+	border: 0px;
 }
-.window_wiht_yacht {
-	width: 40%;
-	/*height: 500px;*/
-	box-shadow:-6px 0px 21px 3px rgba(0,0,0,0.38);
-	-webkit-box-shadow:-6px 0px 21px 3px rgba(0,0,0,0.38);
-	-moz-box-shadow:-6px 0px 21px 3px rgba(0,0,0,0.38);
-	border-radius: 55px;
-	/*overflow: hidden;*/
+.back_top {
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    color: #133465;
+    cursor: pointer;
 }
-.wrap_window_img {
-	width: 100%;
+
+
+/* 4 section */
+
+.form_input {
+    display: grid;
 }
-.window_img {
-	width: 100%;
+.form_input input {
+    height: 90px;
+    width: 27.1%;
+    margin: 1% auto;
+    border-radius: 5px;
+    padding-left: 1%;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Roboto Slab', serif;
+
 }
-.name_group {
-	display: grid;
-	justify-content: center;
-	/*margin-top: 30px;*/
-	width: 100%;
+.form_input textarea {
+    width: 26.25%;
+    margin: 1% auto;
+    border-radius: 5px;
+    padding: 1%;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Roboto Slab', serif;
 }
-.name_group h2 {
-	text-align: center;
-	font-family: "NECMATO";
-	font-weight: 100;
-	margin: 0;
-    font-size: 80px;
-    height: 80px;
-    border-bottom: 1px solid #000;
+.form_input p {
+    text-align: center;
+    font-weight: 300;
+    margin: 0 0 20px 0;
+}
+.form_input button {
+    margin: 0 auto;
+    width: 15.67%;
+    font-size: 18px;
+    padding: 1.46% 0;
+    background: #133465;
+    color: #fff;
+    border: 0;
+    font-weight: 300;
+    font-family: 'Roboto Slab', serif;
+    cursor: pointer;
+}
+
+/* footer */
+
+.footer {
+    background: #F5F5F5;
+}
+#footer_titile {
+    margin: 2% 0;
+}
+#footer_titile h1 {
+    font-size: 50px;
+    font-weight: normal;
+    font-family: "Adriana-Bold";
+    letter-spacing: 5px;
+    padding: 2% 0 0 0
+}
+.footer_nav {
+    text-align: center;
+}
+.footer_nav li {
+    display: inline;
+    margin: 0 .5%;
+}
+.footer_nav a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+}
+.footer_social {
+    text-align: center;
+}
+.footer_social img {
+    margin: 0 .2%;
+}
+.footer_signature {
+    text-align: center;
+    padding: 2% 0;
+}
+.footer_signature p {
+    font-size: 18px;
+    margin: 0 ;
+}
+.footer_signature a {
+    text-decoration: none;
+    color: #000;
+} 
+
+/* top_yacht */
+
+.heaederTop_logo {
+    text-align: center;
+    padding: 1% 0 3% 0;
+}
+.headerTop_nav {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.header_top {
+}
+.headerTop_menu  {
+    width: 60%;
+}
+.headerTop_menu li {
+    display: inline;
+    margin: 0 2%;
+}
+.headerTop_menu a {
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 200;
+    transition: .5s;
+}
+.headerTop_menu a:hover {
+    color: #D9BD75;
+    transition: .5s;
+}
+.navTop_lang {
+    position: relative;
+    top: -7px;
+    border: 1px solid #000;
+    padding: 1% 1.5% 1% 1%;
+    border-radius: 10px;
+    width: 2%;
+    height: 10%;
+    cursor: pointer;
+}
+.navTop_lang p {
+    font-size: 20px;
+    color: #000;
+    margin: 0;
+}
+#top_category {
+    margin: 10% 0;
+}
+.activ_pages {
+    border: 1px solid #D9BD75;
+    border-radius: 5px;
+    padding: 1%;
+}
+.title_text_contact {
+    font-weight: bold;
+    font-family: "Adriana-Bold";
+    font-size: 120px;
+    text-align: center;
+}
+.contact_desc {
+    display: flex;
+    justify-content: space-around;
+}
+.contact_adres {
+    display: flex;
+    width: 20%;
+}
+.contact_adres img {
+    width: 26%;
+    height: 90%;
+}
+.contact_mail {
+    display: flex;
+    width: 20%;
+}
+.contact_mail img {
+    width: 26%;
+    height: 48%;
+    position: relative;
+    top: 14px;
+    right: 10px;
+}
+
+/* lang_burger */
+.lang_burger {
+    position: relative;
+}
+.lang_burger::before,
+.lang_burger::after {
+    content: '';
+    background: #000;
+    position: absolute;
+    width: 29%;
+    height: 1px;
+    top: 15px;
+}
+.lang_burger::before {
+    transform: rotate(45deg);
+    left: 36px;
+}
+.lang_burger::after {
+    transform: rotate(-45deg);
+    left: 42px;
+}
+#color_lang::before,
+#color_lang::after {
+    background: #fff;
+}
+.open_lang {
+    display: none;
+    height: 0;
+    transition: .5s;
+}
+.open_lang a {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+.open_lang.show {
+    display: block;
+    height: 50px;
+    transition: 1s;
+}
+#link_lang a {
+    color: #000;
+}
+
+
+/* yacht pages */
+
+.container {
+    width: 42%;
+    margin: 0 auto;
+}
+.container strong {
+    color: #133465;
+}
+.container span {
+    color: #133465;
+    font-weight: 300;
+}
+.yacht_title {
+    display: flex;
+    justify-content: space-between;
+}
+.block_one p {
+    font-weight: 200;
+}
+.block_one_btn {
+    width: 37%;
+}
+.block_one_btn button {
+    width: 100%;
+    height: 58%;
+    border: 0;
+    color: #133465;
+    font-size: 18px;
+    font-weight: 300;
+     font-family: 'Roboto Slab', serif;
+     cursor: pointer;
+}
+.service_text {
+    font-weight: 400;
+}
+.btn_orderYacht button {
+    background: #133465;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Roboto Slab', serif;
+    cursor: pointer;
+    border: 0;
+    width: 37.3%;
+    padding: 3.5% 0;
+    border-radius: 5px;
+    margin: 10% 0;
+}
+.description_yacht {
+    background: #F5F5F5;
+}
+.description_yacht_wrap {
+    display: flex;
+    justify-content: space-around;
+}
+.container h2 {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 400;
+    padding: 5% 0;
+    letter-spacing: 10px;
+}
+.description_yacht_title {
+    width: 43%;
+    position: relative;
+}
+.description_yacht_title img {
+    position: absolute;
+    top: 32%;
+}
+.lef_img {
+    left: 5%;
+}
+.right_img {
+    right: 5%;
+}
+.description_subyacht_title {
+    width: 43%;
+}
+.description_subyacht_title {
+    text-align: center;
+    font-size: 18px;
+    
+}
+.description_yacht_subtitle p {
+    font-size: 18px;
+    font-weight: lighter;
+}
+.description_yacht_subtitle strong {
+    color: #133465;
+    font-weight: 400;
+}
+.description_yacht_title p {
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #D9BD75;
+    padding: 7%;
+    border-radius: 5px;
+}
+.linkback {
+    margin-left: 10%;
+}
+.linkback a {
+    text-decoration: none;
+    color: #133465;
+    font-size: 18px;
+}
+.linkback img {
+    width: 3%;
+}
+.some_menu {
+    display: flex;
     width: 100%;
 }
-.main_name_group {
-	width: 100%;
+.some_desc {
+    width: 100%;
 }
-.line_after {
-	position: relative;
-    top: 15px;
-    left: 35px;
-    margin: 20px 0;
+.some_desc p {
+    font-size: 18px;
 }
-.line_after2 {
-	position: relative;
-    top: 15px;
-    left: 35%;
-    margin: 20px 0;
-}
-.line_after3 {
-	position: relative;
-    top: 15px;
-    left: 20%;
-    margin: 20px 0;
-}
-.line_after4 {
-	position: relative;
-    top: 15px;
-    left: 30%;
-    margin: 20px 0;
-}
-.line_after5 {
-	position: relative;
-    top: 15px;
-    margin: 20px 0;
-}
-.line_after6 {
-	position: relative;
-    top: 15px;
-    left: 10%;
-    margin: 20px 0;
-}
-.price {
-	text-align: center;
-	font-family: 'Montserrat', sans-serif;
-	color: #FF7A00;
-	font-size: 18px;
-	font-weight: normal;
-}
-.duble_price {
-	float: 
-}
-.info_about_yacht {
-	display: flex;
-	justify-content: space-evenly ;
-	width: 97%;
-	padding: 0 7%;
-}
-.wrap_description {
-	display: flex;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: normal;
-	font-size: 18px;
-	line-height: 10px;
-}
-.wrap_description a {
-	text-decoration: none;
-	color: #0D9DA6;
-	border-bottom: 1px dashed #0D9DA6;
-}
-.wrap_description img {
-	height: 25px;
-	position: relative;
-	top: 12px;
-	right: 5px;
-
-}
-.wrap_description_link {
-	margin-top: 18%;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: normal;
-}
-.wrap_description_link a {
-	text-decoration: none;
-	color: #0D9DA6;
-	border-bottom: 2px dashed;
-}
-.btn_call {
-	width: 150px;
-    height: 37px;
-    background: #012A33;
-    border-radius: 30px;
-    text-align: center;
-    padding: 17px 0 0 0;
+.some_img {
+    width: 100%;
     position: relative;
-    left: 37%;
-    top: 19px;
 }
-.btn_call a {
-	text-decoration: none;
-	color: #fff;
-	font-family: 'Montserrat', sans-serif;
-	font-weight:  bold;
+.some_img img {
+    position: absolute;
+    top: 30%;
+    left: 21%;
+    width: 125%;
 }
-.block_back {
-	display: flex;
-	justify-content: center;
-	margin: 80px 0;
+.headerTop_nav {
+    width: 100%;
 }
-.link_back {
-	border: 0px;
-	background: #F8F8F8;
-	border-radius: 30px;
-	text-align: center;
-    padding: 17px;
-    cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
-	font-weight:  bold;
-	outline: none;
+.mb_header {
+    display: none;
 }
-.link_back_ENG {
-	width: 13%;
-	border: 0px;
-	background: #F8F8F8;
-	border-radius: 30px;
-	text-align: center;
-    padding: 24px;
-    cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
-	font-weight:  bold;
-	outline: none;
-}
-.link_back button {
-	/*outline: none;
-	border: 0px;
-	background: #F8F8F8;
-	width: 150px;
-	height: 17px;
-	font-family: 'Montserrat', sans-serif;
-	font-weight:  bold;*/
-}
-}
-
-/*reviews*/
-
-.reviews {
-	width: 80%;
-	display: flex;
-	justify-content: center;
-}
-.reviews_title {
-	text-align: center;
-	font-family: 'Montserrat', sans-serif;
-	font-weight:  bold;
-	font-size: 30px;
-}
-.form_back {
-	display: flex;
-	justify-content: center;
-}
-.form-email input {
-	width: 300px;
-	height: 50px;
-	border-radius: 20px;
-	border: 0px;
-    background: #F8F8F8;
-    margin-right: 20px;
-    font-family: 'Montserrat', sans-serif;
-	font-weight:  normal;
-	color: #000;
-}
-.form-email textarea {
-	width: 635px;
-    height: 114px;
-    border-radius: 20px;
-    margin: 20px 20px 0 0;
-    border: 0px;
-    background: #F8F8F8;
-    font-family: 'Montserrat', sans-serif;
-	font-weight:  normal;
-	color: #000;
-}
-.form-email{
-	font-size: 14px;
-	text-align: center;
-	font-family: 'Montserrat', sans-serif;
-	font-weight:  normal;
-}
-.btn_form_back {
-	width: 150px;
-    height: 37px;
-    /*background: #000;*/
-    border-radius: 30px;
-    text-align: center;
-    padding: 17px 0 0 0;
-    position: relative;
-    left: 37%;
-    top: 19px;
-    cursor: pointer;
-}
-.btn_form_back button {
-	width: 157px;
-	height: 46px;
-	background: #012A33;
-	color: #fff;
-	font-family: 'Montserrat', sans-serif;
-	font-weight:  bold;
-	border: 0px;
-	 border-radius: 30px;
-	 outline: none;
-	 cursor: pointer;	
+.open_menu {
+    display: none;
 }
 
 
-.input.error{
-	box-shadow: 0 0 10px indianred;
-}
-.input {
-	outline: none;
-}
-/*contact*/
-
-.contact {
-	text-align: center;
-}
-.contact h2 {
-	font-family: 'Montserrat', sans-serif;
-	font-weight:  bold;
-	font-size: 30px;
-	margin: 100px 0 50px 0;
-}
-.second_block_with_contact {
-	display: flex;
-	justify-content: space-between;
-}
-.maps {
-	width: 70%;
-	border-top-right-radius: 50px;
-	border-bottom-right-radius: 50px;
-
-}
-.maps iframe {
-	border-top-right-radius: 50px;
-	border-bottom-right-radius: 50px;
-	/*max-width: 900px;*/
-}
-.logo_footer {
-	width: 30%;
-	background: #012A33;
-	border-top-left-radius: 50px;
-	border-bottom-left-radius: 50px;
-}
-.logo_footer_img {
-	display: flex;justify-content: center;
-}
-.logo_footer_img img {
-	width: 55%;
-    margin: 30px 0 50px 0;
-}
-.footer_contact p {
-	font-size: 14px;
-	color: #fff;
-	font-family: 'Montserrat', sans-serif;
-	font-weight:  bold;
-}
-.footer_title {
-	display: flex;
-	justify-content: center;
-}
-.footer_title1 {
-	display: flex;
-	justify-content: center;
-	position: relative;
-	right: 2%;
-}
-.footer_title1 img {
-	height: 18px;
-    position: relative;
-    top: 13px;
-    right: 7px;
-}
-.footer_title img {
-	height: 18px;
-    position: relative;
-    top: 13px;
-    right: 7px;
-}
-.social {
-	display: flex;
-	justify-content: center;
-	
-}
-.social img {
-	margin: 30px 15px 30px 0px;
-}
-.disign_name {
-	text-align: center;
-}
-.disign_name p {
-	font-family: 'Montserrat', sans-serif;
-	font-weight:  bold;
-	color: #fff;
-}
-/*footer*/
-
-.footer_menu li {
-	display: inline;
-	font-family: 'Montserrat', sans-serif;
-	font-weight:  bold;
-	font-size: 14px;
-	margin: 10px 40px;
-}
-.footer_menu a {
-	text-decoration: none;
-	color: #000;
-}
-.footer_description {
-	display: flex;
-	justify-content: space-between;
-	    
-}
-.description_block {
-	padding: 15px 25px 0 20px;
-}
-.description_block1 {
-	text-align: end;
-	padding: 15px 25px 0 20px;
-}
-.description_block2 {
-	padding: 15px 25px 0 20px;
-}
-.description_block2 {
-	font-family: 'Montserrat', sans-serif;
-	font-weight:  normal;
-}
-.description_block1 p {
-	font-family: 'Montserrat', sans-serif;
-	font-weight:  normal;
-}
-.description_block p {
-	font-family: 'Montserrat', sans-serif;
-	font-weight:  normal;
-
-}
-.signatury a {
-	text-align: center;
-	font-family: 'Montserrat', sans-serif;
-	font-weight:  bold;
-	text-decoration: none;
-	color: #000;
-}
+@media screen and (min-width: 1000px) 
+		      and (max-width: 1440px) {
+                .header_menu a {
+                    font-size: 15px;
+                }
+                .headerTop_menu a {
+                    font-size: 15px;
+                }
+                .headerTop_menu {
+                    padding-right: 5%;
+                }
+                .header_menu {
+                    padding-right: 5%;
+                }
+                .lang_burger::before {
+                    left: 34px;
+                }
+                .lang_burger::after {
+                    left: 39px;
+                }
+                .contact_mail img {
+                    height: 35%;
+                    top: 18px;
+                }
+                .description_yacht_subtitle p {
+                    font-size: 16px;
+                }
+                .linkback a {
+                    font-size: 16px;
+                }
+                .title_text h1 {
+                    font-size: 50px;
+                }
+                .mb_header {
+                    display: none;
+                }
+                .open_menu {
+                    display: none;
+                }
+              }
 
 
+              @media screen 
+                and (min-device-width: 420px)
+                and (max-device-width: 1024px) {
+                    .header_nav {
+                        display: none;
+                    }
+                    .header_title h1 {
+                        font-size: 80px;
+                    }
+                    #logo {
+                        display: none;
+                    }
+                    .mb_header {
+                        display: flex;
+                        justify-content: space-around;
+                    }
+                    .logo_mb img {
+                        width: 48%;
+                    }
+                    .nav_lang {
+                        position: relative;
+                        top: 4px;
+                        border: 1px solid #fff;
+                        padding: 2% 4% 2% 2%;
+                        border-radius: 10px;
+                        width: 4%;
+                        height: 10%;
+                        cursor: pointer;
+                    }
 
+                    /* menu */
 
+                    .burger_menu {
+                        position: relative;
+                        top: 25px;
+                        left: -7%;
+                    }
+                    .burger_menu span {
+                        height: 2px;
+                        width: 50px;
+                        background: #fff;
+                        position: absolute;
+                        transition: 1s;
+                    }
+                    .burger_menu::before,
+                    .burger_menu::after {
+                        content: '';
+                        position: absolute;
+                        background: #fff;
+                        width: 40px;
+                        height: 2px;
+                        transition: 1s;
+                        z-index: 4;
+                    }
+                    .burger_menu::before {
+                        top: -9px;
+                        left: 0;
+                    }
+                    .burger_menu::after {
+                        bottom: 55px;
+                        left: 0;
+                        width: 45px;
+                    }
+                    .burger_menu.active:before {
+                        transform: rotate(45deg);
+                        top: 0;
+                        background: #000;
+                        transition: 1s;
+                    }
+                    .burger_menu.active::after {
+                        transform: rotate(-45deg);
+                        bottom: 66px;
+                        width: 40px;
+                        background: #000;
+                        transition: 1s;
+                    }
+                    .burger_menu.active span {
+                        transform: scale(0);
+                        transition: 1s;
+                    }
+                    .open_menu {
+                        display: block;
+                        width: 35%;
+                        height: 51%;
+                        background: #F5F5F5;
+                        position: absolute;
+                        top: 0;
+                        left: -100%;
+                        transition: 1.5s;
+                        -webkit-box-shadow: 11px 16px 24px 6px rgba(34, 60, 80, 0.2);
+                        -moz-box-shadow: 11px 16px 24px 6px rgba(34, 60, 80, 0.2);
+                        box-shadow: 11px 16px 24px 6px rgba(34, 60, 80, 0.2);
+                    }
+                    .open_menu.active {
+                        left: 0;
+                    }
+                    .link_page {
+                        margin-top: 72%;
+                    }
+                    .link_page li {
+                        list-style-type: none;
+                        margin: 4% 0;
+                    }
+                    .link_page a {
+                        text-decoration: none;
+                        color: #000;
+                        font-size: 18px;
+                        font-weight: lighter;
+                    }
+                    .btn_class {
+                        width: 29.66%;
+                        padding: 2.46% 0;
+                        border: 1px solid;
+                    }
+                    .yacht_img {
+                        width: 100%;
+                    }
+                    .yacht_header {
+                        display: block;
+                    }
+                    .btn_see button {
+                        width: 68%;
+                        padding: 6.36% 0;
+                    }
+                    .form_input input {
+                        width: 69.1%;
+                        border: 1px solid;
+                    }
+                    .form_input textarea {
+                        width: 69.1%;
+                        border: 1px solid;
+                        height: 199px;
+                    }
+                    .form_input button {
+                        width: 30.67%;
+                        padding: 2.46% 0;
+                        border-radius: 5px;
+                    }
+                    .footer_nav li {
+                        margin: 0 2.5%;
+                    }
+                    .headerTop_nav {
+                        display: none;
+                    }
+                    .navTop_lang {
+                        position: relative;
+                        top: 4px;
+                        border: 1px solid #000;
+                        padding: 2% 4% 2% 2%;
+                        border-radius: 10px;
+                        width: 4%;
+                        height: 10%;
+                        cursor: pointer;
+                    }
+                    #logo_mb_big {
+                        width: 66%;
+                    }
 
+                    .burger_black {
+                        position: relative;
+                        top: 25px;
+                        left: -7%;
+                    }
+                    .burger_black span {
+                        height: 2px;
+                        width: 50px;
+                        background: #000;
+                        position: absolute;
+                        transition: 1s;
+                    }
+                    .burger_black::before,
+                    .burger_black::after {
+                        content: '';
+                        position: absolute;
+                        background: #000;
+                        width: 40px;
+                        height: 2px;
+                        transition: 1s;
+                        z-index: 4;
+                    }
+                    .burger_black::before {
+                        top: -9px;
+                        left: 0;
+                    }
+                    .burger_black::after {
+                        bottom: 55px;
+                        left: 0;
+                        width: 45px;
+                    }
+                    .burger_black.active:before {
+                        transform: rotate(45deg);
+                        top: 0;
+                        background: #000;
+                        transition: 1s;
+                    }
+                    .burger_black.active::after {
+                        transform: rotate(-45deg);
+                        bottom: 66px;
+                        width: 40px;
+                        background: #000;
+                        transition: 1s;
+                    }
+                    .burger_black.active span {
+                        transform: scale(0);
+                        transition: 1s;
+                    }
+                    .title_text_contact {
+                        font-size: 57px;
+                    }
+                    .contact_adres {
+                        width: 45%;
+                    }
+                    .contact_mail {
+                        width: 40%;
+                    }
+                    .container {
+                        width: 90%;
+                    }
+                    .linkback img {
+                        width: 6%;
+                    }
+                    .slider .slick-arrow.slick-prev {
+                        right: 11%;
+                        width: 4%;
+                    }
+                    .slider .slick-arrow {
+                        top: -1%;
+                    }
+                    .slider .slick-arrow.slick-next {
+                        width: 4%;
+                    }
+                    .title_text p {
+                        font-size: 14px;
+                        line-height: 30px;
+                    }
+                }
+
+                @media screen 
+                and (min-device-width: 280px)
+                and (max-device-width: 414px) {
+                    .header_title h1  {
+                        font-size: 58px;
+                    }
+                    .header_nav {
+                        display: none;
+                    }
+                    .mb_header {
+                        display: flex;
+                        justify-content: space-around;
+                    }
+                    #logo {
+                        display: none;
+                    }
+                    .title_text h1 {
+                        font-size: 30px;
+                    }
+                    .header {
+                        width: 103%;
+                        height: 100vh;
+                    }
+                    .heaeder_logo img {
+                        width: 48%;
+                    }
+                    .header_btn_contact {
+                        position: relative;
+                        bottom: -34%;
+                    }
+
+                                        /* menu */
+
+                                        .burger_menu {
+                                            position: relative;
+                                            top: 25px;
+                                            left: -1%;
+                                        }
+                                        .burger_menu span {
+                                            height: 2px;
+                                            width: 50px;
+                                            background: #fff;
+                                            position: absolute;
+                                            transition: 1s;
+                                        }
+                                        .burger_menu::before,
+                                        .burger_menu::after {
+                                            content: '';
+                                            position: absolute;
+                                            background: #fff;
+                                            width: 40px;
+                                            height: 2px;
+                                            transition: 1s;
+                                            z-index: 4;
+                                        }
+                                        .burger_menu::before {
+                                            top: -9px;
+                                            left: 0;
+                                        }
+                                        .burger_menu::after {
+                                            bottom: 57px;
+                                            left: 0;
+                                            width: 45px;
+                                        }
+                                        .burger_menu.active:before {
+                                            transform: rotate(45deg);
+                                            top: 0;
+                                            background: #000;
+                                            transition: 1s;
+                                        }
+                                        .burger_menu.active::after {
+                                            transform: rotate(-45deg);
+                                            bottom: 66px;
+                                            width: 40px;
+                                            background: #000;
+                                            transition: 1s;
+                                        }
+                                        .burger_menu.active span {
+                                            transform: scale(0);
+                                            transition: 1s;
+                                        }
+                                        .open_menu {
+                                            display: block;
+                                            width: 103%;
+                                            height: 51%;
+                                            background: #F5F5F5;
+                                            position: absolute;
+                                            top: 0;
+                                            left: -103%;
+                                            transition: 1.5s;
+                                            -webkit-box-shadow: 11px 16px 24px 6px rgba(34, 60, 80, 0.2);
+                                            -moz-box-shadow: 11px 16px 24px 6px rgba(34, 60, 80, 0.2);
+                                            box-shadow: 11px 16px 24px 6px rgba(34, 60, 80, 0.2);
+                                        }
+                                        .open_menu.active {
+                                            left: 0;
+                                        }
+                                        .nav_lang {
+                                            position: relative;
+                                            top: 4px;
+                                            border: 1px solid #fff;
+                                            padding: 2% 8% 2% 2%;
+                                            border-radius: 10px;
+                                            width: 4%;
+                                            height: 10%;
+                                            cursor: pointer;
+                                        }
+                                        .lang_burger::after {
+                                            left: 39px;
+                                        }
+                                        .link_page {
+                                            margin-top: 21%;
+                                            margin-left: 13%;
+                                        }
+                                        .link_page li {
+                                            list-style-type: none;
+                                            margin: 4% 0;
+                                        }
+                                        .link_page a {
+                                            text-decoration: none;
+                                            color: #000;
+                                            font-size: 18px;
+                                            font-weight: lighter;
+                                        }
+
+                                        /*  */
+
+                                        .slider .slick-arrow {
+                                            top: -4%;
+                                        }
+                                        .slide_title {
+                                            font-size: 15px;
+                                            font-weight: lighter;
+                                            text-align: center;
+                                            margin-right: 0;
+                                            padding: 0 2%;
+                                        }
+                                        .btn_class {
+                                            width: 300px;
+                                            height: 80px;
+                                            border: 1px solid;
+                                            margin: 3% 0;
+                                        }
+                                        .category_btn {
+                                            display: grid;
+                                            justify-content: center;
+                                        }
+                                        .yacht_wrap {
+                                            display: block;
+                                        }
+                                        .yacht_block {
+                                            width: 96%;
+                                            margin: 10% auto;
+                                        }
+                                        .yacht_header {
+                                            display: block  ;
+                                        }
+                                        .yacht_img {
+                                            width: 97%;
+                                            margin: 0 auto;
+                                        }
+                                        .content {
+                                            width: 100%;
+                                        }
+                                        .btn_see button {
+                                            width: 300px;
+                                            height: 80px;
+                                        }
+                                        .contact {
+                                            width: 100%;
+                                        }
+                                        .form_input input {
+                                            width: 362px;
+                                            height: 70px;
+                                            border: 1px solid;
+                                        }
+                                        .form_input textarea {
+                                            width: 362px;
+                                            height: 140px;
+                                            border: 1px solid;
+                                        }
+                                        .form_input button {
+                                            width: 300px;
+                                            height: 80px;
+                                            border-radius: 5px;
+                                        }
+                                        #footer_titile h1 {
+                                            font-size: 36px;
+                                        }
+                                        .footer_nav li {
+                                            display: block;
+                                            margin: 5% 0;
+                                        }
+                                        .footer_nav ul {
+                                            padding: 0;
+                                        }
+                                        .footer {
+                                            width: 100%;
+                                        }
+                                        .headerTop_nav {
+                                            display: none;
+                                        }
+
+                                        .burger_black {
+                                            position: relative;
+                                            top: 25px;
+                                            left: -3%;
+                                        }
+                                        .burger_black span {
+                                            height: 2px;
+                                            width: 50px;
+                                            background: #000;
+                                            position: absolute;
+                                            transition: 1s;
+                                        }
+                                        .burger_black::before,
+                                        .burger_black::after {
+                                            content: '';
+                                            position: absolute;
+                                            background: #000;
+                                            width: 40px;
+                                            height: 2px;
+                                            transition: 1s;
+                                            z-index: 4;
+                                        }
+                                        .burger_black::before {
+                                            top: -9px;
+                                            left: 0;
+                                        }
+                                        .burger_black::after {
+                                            bottom: 91px;
+                                            left: 0;
+                                            width: 45px;
+                                        }
+                                        .burger_black.active:before {
+                                            transform: rotate(45deg);
+                                            top: 0;
+                                            background: #000;
+                                            transition: 1s;
+                                        }
+                                        .burger_black.active::after {
+                                            transform: rotate(-45deg);
+                                            bottom: 100px;
+                                            width: 40px;
+                                            background: #000;
+                                            transition: 1s;
+                                        }
+                                        .burger_black.active span {
+                                            transform: scale(0);
+                                            transition: 1s;
+                                        }
+                                        .navTop_lang {
+                                            position: relative;
+                                            top: 4px;
+                                            border: 1px solid #000;
+                                            padding: 2% 8% 2% 2%;
+                                            border-radius: 10px;
+                                            width: 4%;
+                                            height: 10%;
+                                            cursor: pointer;
+                                        }
+                                        .header_top {
+                                            width: 100%;
+                                        }
+                                        .linkback img {
+                                            width: 10%;
+                                        }
+                                        .yacht_title {
+                                            display: block;
+                                            justify-content: space-between;
+                                            text-align: left;                                        
+                                        }
+                                        .container {
+                                            width: 100%;
+                                            
+                                        }
+                                        .yacht_desc {
+                                            padding: 0 10%;
+                                        }
+                                        .block_one_btn button {
+                                            width: 250px;
+                                            height: 60px;
+                                        }
+                                        .btn_orderYacht button {
+                                            width: 250px;
+                                            height: 60px;
+                                        }
+                                        .description_yacht_title img {
+                                            display: none;
+                                        }
+                                        .description_yacht_title p {
+                                            height: 50px;
+                                        }
+                                        .description_yacht_wrap {
+                                            padding: 0 4%;
+                                        }
+                                        .title_text_contact {
+                                            font-size: 24px;
+                                            letter-spacing: 5px;
+                                        }
+                                        .contact_desc {
+                                            display: block;
+                                        }
+                                        .contact_adres {
+                                            width: 100%;
+                                            justify-content: center;
+                                            margin: 12% 0;
+                                        }
+                                        .contact_mail {
+                                            width: 100%;
+                                            justify-content: center;
+                                        }
+                }
